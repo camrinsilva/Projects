@@ -1,0 +1,32 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: mediumseagreen;
+  color: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height: 100vh;
+}
+
+.container {
+  max-width: 100%;
+}
+
+h1 {
+  color: goldenrod;
+}
+
+#btn {
+  width: 100px;
+  height: 25px;
+  background-color: goldenrod;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+

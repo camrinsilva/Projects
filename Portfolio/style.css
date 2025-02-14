@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+  --primary-color: #7b9acc;
+  --secondary-color: #1c3fa8;
+  --dark-color: #FCF6F5;
+  --light-color: #f4f4f4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1, h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  padding: 10px 30px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(0.9);
+  transition: transform 0.5s ease-in;
+}
+
+/* Utililty Styles */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+/* Text Sizes */
+.sm {
+  font-size: .8rem;
+}
+
+.md {
+  font-size: 1.5rem;
+}
+
+.lg {
+  font-size: 2rem;
+}
+
+/* Navbar */ 
+.navbar {
+  height: 70px;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  padding: 10px;
+  margin: 0 5px;
+  color: #fff;
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+/* About */
+.about {
+  height: 400px;
+  background-color: var(--primary-color);
+  color: #fff;
+  position: relative;
+}
+
+.about .grid {
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+  overflow: visible;
+}
+
+.about img {
+  position: relative;
+  top: 60px;
+  z-index: 100;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.5);
+}
+
+.about h2 {
+  font-size: 40px;
+}
+
+.about p {
+  margin: 10px 0;
+  line-height: 1.6;
+  word-spacing: 2px;
+}
+
+.about::before, .about::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  transform: scaleY(-3deg);
+  -webkit-transform: scaleY(-3deg);
+  -moz-transform: scaleY(-3deg);
+  -ms-transform: scaleY(-3deg);
+}
+
+/* Projects */
+.projects .flex {
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.projects {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 2rem;
+}
+
+.projects .card {
+  width: 300px;
+}
+
+.projects a + a {
+  margin-left: 20px;
+}
+
+.projects a:hover {
+  border-bottom: 2px #333 solid;
+}
+
+/* Contact */
+.contact {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.contact .grid {
+  justify-content: space-around;
+}
+
+.contact-form {
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+}
+
+.contact-form .form-control {
+  margin: 20px 0;
+}
+
+.contact-form input[type = 'text'], 
+.contact-form input[type = 'email'] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.contact-form input:focus {
+  outline: none;
+}
+/* Footer */
+.footer {
+  background-color: var(--dark-color);
+  color: var(--primary-color);
+  padding: 2rem;
+}
+
+.footer a {
+  color: var(--primary-color);
+}
+
+.footer .flex {
+  justify-content: space-around;
+}
+
+.footer a:hover {
+  border-bottom: 2px var(--primary-color) solid;
+}
+
+@media(max-width: 600px) {
+  .navbar .flex,
+  .projects .flex,
+  .footer .flex,
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .contact .grid,
+  .about .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .about {
+    height: auto;
+  }
+
+  .about-text {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .navbar {
+    height: 110px;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .contact-form {
+    justify-self: center;
+    margin: auto;
+  }
+
+  .contact .card:hover {
+    transform: scale(0.9);
+    transition: transform 0.5s ease-in;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer ul {
+    margin-bottom: 15px;
+  }
+
+  .footer a + a {
+    margin-left: 15px;
+  }
+}

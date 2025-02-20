@@ -4,18 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
+  <title>BlackJack</title>
 </head>
 <body>
-  <section class="container">
-  <h1>Blackjack</h1>  
-  <p class="message-el"></p>
-  <p class="cards-el">Cards:</p>
-  <p class="sum-el">Sum:</p>
-  <button id="btn" onclick="getRandomNumber()">Start Game</button>
-  <button id="btn">New Card</button>
-  <p>Per:</p>
-  </section>
+  <main class="main">
+    <section class="container flex">
+      <div class="dealer">
+        <div class="beside">
+        <h1>Dealer</h1>
+        <div class="dealer-cards">
+          <img src="cards/BACK.png" alt="Facedown Card" class="card hidden">
+        </div>
+      </div>
+        <h1 class="dealer-sum">Sum:</h1>
+      </div>
+      <div class="player">
+       <div class= "beside">
+        <h1>Player</h1>
+        <div class="player-cards"></div>
+       </div>
+        <h1 class="player-sum">Sum:</h1>
+      </div>
+    </section>
+      <section class="interact container">
+      <Button class="btn" onclick="startGame()">Start Game</Button>
+      <button class="btn hit">Hit</button>
+      <Button class="btn stand">Stand</Button>
+    </section>
+
+    <div id="play-again-overlay" class="overlay hidden">
+      <div class="modal">
+        <p class="results">Results:</p>
+        <button class="play-again-btn btn">Play Again?</button>
+        <button class="exit-btn btn">Exit</button>
+      </div>
+    </div>
+  </main>
   <script src="main.js"></script>
 </body>
 </html>

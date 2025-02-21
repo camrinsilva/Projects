@@ -196,8 +196,10 @@ p {
   height: 450px;
 }
 
+
 .card-links {
   border-top: 2px solid #333;
+
 }
 
 .projects a + a {

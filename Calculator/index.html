@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
+  <div class="calculator">
+    <input id="display" type="text" readonly>
+    <div class="keys">
+      <button class="btn highlight-gray" onclick="clearDisplay()">AC</button>
+      <button class="btn highlight-gray" onclick="toggleSign()">+/-</button>
+      <button class="btn highlight-gray" onclick="appendToDisplay('%')">%</button>
+      <button class="btn highlight-orange" onclick="appendToDisplay('/')">/</button>
+      <button class="btn" onclick="appendToDisplay('7')">7</button>
+      <button class="btn" onclick="appendToDisplay('8')">8</button>
+      <button class="btn" onclick="appendToDisplay('9')">9</button>
+      <button class="btn highlight-orange" onclick="appendToDisplay('*')">x</button>
+      <button class="btn" onclick="appendToDisplay('4')">4</button>
+      <button class="btn" onclick="appendToDisplay('5')">5</button>
+      <button class="btn" onclick="appendToDisplay('6')">6</button>
+      <button class="btn highlight-orange" onclick="appendToDisplay('-')">-</button>
+      <button class="btn" onclick="appendToDisplay('1')">1</button>
+      <button class="btn" onclick="appendToDisplay('2')">2</button>
+      <button class="btn" onclick="appendToDisplay('3')">3</button>
+      <button class="btn highlight-orange" onclick="appendToDisplay('+')">+</button>
+      <button class="btn brightness-toggle" onclick="toggleBrightness()">
+        <i class="fa-solid fa-sun 2x"></i>
+      </button>
+      <button class="btn" onclick="appendToDisplay('0')">0</button>
+      <button class="btn" onclick="appendToDisplay('.')">.</button>
+      <button class="btn highlight-orange" onclick="calculate('=')">=</button>
+    </div>
+  </div>
+    <script src="main.js"></script>
+</body>
+</html>

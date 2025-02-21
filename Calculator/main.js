@@ -35,13 +35,17 @@ function calculate() {
 }
 
 function toggleBrightness() {
-  document.body.classList.toggle('lightmode');
+  let bodyEl = document.body;
+  bodyEl.classList.toggle('lightmode');
+
   let icon = document.querySelector('.brightness-toggle i');
-  icon.classList.add('fa-moon')
+  icon.classList.add('fa-moon');
 
   if(document.body.classList.contains('lightmode')) {
     icon.classList.remove('fa-moon');
     icon.classList.add('fa-sun');
   }
+
+
 }
 

@@ -78,12 +78,11 @@ body {
   color: #fff;
 }
 
-
 .lightmode .btn i {
   color: #afc2cf;
 }
-.lightmode body {
-  background-color: white;
+.lightmode {
+  background-color: #afc2cf;
 }
 
 .lightmode .calculator {
@@ -107,5 +106,5 @@ body {
 
 .lightmode .highlight-orange {
   background-color: #79d1fe;
-  color: #333;
+  color: #39748e;
 }

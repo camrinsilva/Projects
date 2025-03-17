@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+} 
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;;
+}
+
+.container {
+  min-height: 300px;
+  width: 300px;
+  background-color: azure;
+  padding: 15px;
+}
+
+.shopping-list-add {
+  text-align: center;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  height: 25px;
+  border: none;
+  box-shadow: 1px 1px 1px;
+  padding: 5px;
+}
+
+input:focus {
+  border: 1px solid azure;
+}
+
+.item-input input{
+  margin-left: 10px;
+}
+
+.price-input input{
+  margin-left: 5px;
+}
+
+.price-input {
+  margin-top: 10px;
+}
+
+
+.btn {
+  width: 80px;
+  height: 25px;
+  background-color: white;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px;
+  cursor: pointer;
+}
+
+
+
+.btn:hover {
+  opacity: 50%;
+  scale: 1.03;
+}
+
+.delete {
+  min-width: 20px;
+  width: 30px;
+  min-height: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: azure;
+}
+
+.shopping-list {
+  margin-top: 50px;
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}

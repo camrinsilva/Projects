@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    ROCK PAPER SCISSORS
+  </header>
+
+  <main class="main">
+    <div class="main-text">
+      <h1 class="main-title">Choose your weapon</h1>
+      <p class="main-subtext">First to score five points wins</p>
+    </div>
+
+    <div class="results-container">
+        <div class="player-results">
+          <div class="player-choice">?</div>
+          <p class="player-score">Player:0</p>
+        </div>
+        <div class="computer-results">
+          <div class="computer-choice">?</div>
+          <p class="computer-score">Computer:0</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-container">
+      <button class="btn" id="rock">✊</button>
+      <button class="btn" id="paper">✋</button>
+      <button class="btn" id="scissors">✌️</button>
+    </div>
+</main>
+
+<div class="modal">
+  <p class="modal-result"></p>
+  <button class="play-again" onclick="playAgain()">Play Again?</button>
+</div>
+
+  <footer class="footer">
+    <p>Camrin Silva &copy;2025</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

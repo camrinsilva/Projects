@@ -1,0 +1,116 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #364156;
+  color: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  background-color: #11151c;
+  min-height: 130px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.main-text {
+  line-height:  .8;
+}
+
+.footer {
+  text-align: center;
+  background-color: #212d40;
+  min-height: 50px;
+}
+
+.results-container {
+  display: flex;
+  position: relative;
+}
+
+.player-results {
+  margin-right: 50px;
+}
+
+.player-choice {
+  font-size: 3rem;
+  padding: 0;
+}
+.computer-choice {
+  font-size: 3rem;
+  padding: 0;
+}
+
+.computer-score {
+  line-height: .5;
+}
+
+.player-score {
+  line-height: .5;
+}
+
+.btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: none;
+  background-color: #212d40;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: .5;
+}
+
+.btn:active {
+  opacity: 1.5;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.play-again {
+  font-size: 1.5rem;
+  background-color: white;
+  border: 1px solid black;
+  padding: .25em .5em;
+  cursor: pointer;
+}
+
+.play-again:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.flex {
+  display: flex;
+}

@@ -45,7 +45,5 @@ function toggleBrightness() {
     icon.classList.remove('fa-moon');
     icon.classList.add('fa-sun');
   }
-
-
 }
 

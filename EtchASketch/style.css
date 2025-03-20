@@ -13,6 +13,7 @@ body {
   justify-content: space-around;
   align-content: center;
   height: 100vh;
+  line-height: 1.6;
 }
 
 .input-container {
@@ -29,6 +30,7 @@ body {
   width: 500px;
   height: 500px;
   margin-top: 35px;
+  box-shadow: 2px 2px 5px;
 }
 
 .cell {
@@ -107,4 +109,9 @@ input {
 
 .normal {
   background-color: black;
+}
+
+.enter {
+  background-color: #fff;
+  color: #333;
 }

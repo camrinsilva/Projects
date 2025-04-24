@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+}
+
+body {
+  background-color: #ededed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url('img/halie-west-25xggax4bSA-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 400px;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  font-size: 3.5rem;
+  font-family: 'Bungee Hairline';
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ref a {
+  color: #fff;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+ text-align: left;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+.form-section p {
+  width: 70ch;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+.form {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  padding: 20px;
+  width: 70vw;
+  height: 250px;
+  box-shadow: 2px 2px 2px;
+}
+
+.form input {
+  width: 200px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #E5E7EB;
+}
+
+.form input:focus {
+  box-sizing: 2px 2px 2px 5px;
+}
+
+.form label {
+  display: block;
+  font-size: .8rem;
+}
+
+.form-header {
+  grid-column: 1 / span 2;
+}
+
+.col1 div {
+  margin-bottom: 10px;
+}
+
+.col2 div {
+  margin-bottom: 10px;
+}
+
+
+.btn {
+  text-align: center;
+  width: 140px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: #596D48;
+  color: #fff;
+}
+
+.btn:hover {
+  scale: 0.99;
+  opacity: .8;
+}
+
+#pwd:invalid {
+  border: 1px solid red;
+}
+
+#confirm_pwd:invalid {
+  border: 1px solid red;
+}
+
+.body-p {
+  font-size: .8rem;
+}
+

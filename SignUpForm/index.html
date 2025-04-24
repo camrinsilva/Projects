@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-Up Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="main">
+    <aside class="aside">
+      <div class="logo">
+        <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="The Odin Project Logo" height="90px" width="70px">
+        <p>ODIN</p>
+      </div>
+
+      <div class="ref">
+        <p>Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a></p>
+      </div>
+    </aside>
+
+    <div class="form-section">
+      <p>This is not a real service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>
+      now</em> to get started</p>
+
+      <p>You <em>know</em> what you want.</p>
+
+      <form action="#" method="get" class="form" id="form">
+        <div class="form-header">
+          <h2>Let's do this!</h2>
+        </div>
+
+        <div class="col1">
+            <div>
+              <label for="first_name">First Name</label>
+              <input type="text" name="first_name" id="first_name" required>
+            </div>
+            
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+
+            <div>
+              <label for="pwd">Password</label>
+              <input type="password" name="pwd" id="pwd" minlength="8" required>
+            </div>
+          </div>
+
+          <div class="col2">
+          <div>
+              <label for="last_name">Last Name</label>
+              <input type="text" name="last_name" id="last_name" required>
+          </div>
+    
+            <div>
+              <label for="phone_number">Phone Number</label>
+              <input type="tel" name="phone_number" id="phone_number" pattern="^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$" required>
+          </div>
+    
+          <div>
+              <label for="confirm_pwd">Confirm Password</label>
+              <input type="password" name="confirm_pwd" id="confirm_pwd" required>
+          </div>
+        </div>
+      </form>
+
+      <button type="submit" class="btn" form="form">Create Account</button>
+      <p class="body-p">Already have an account?<a href="#">Log in</a></p>
+    </div>
+  </main>
+</body>
+</html>

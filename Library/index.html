@@ -4,22 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Library</title>
 </head>
 <body>
   <header>
+    <h1>Library</h1>
     <button class="btn" id="add-btn">Add a book</button>
   </header>
 
   <main>
-    <div class="card">
-      <h1 id="title">Title:</h1>
-      <h1 id="author">Author:</h1>
-      <h1 id="pages">Pages</h1>
-      <button class="btn" id="read-btn">Read</button>
-      <button class="btn" id="delete-btn">Delete</button>
-    </div>
+
   </main>
+
+  <div class="my-modal hidden">
+    <div class="modal">
+      <div class="input close">
+       <button class="x-btn">X</button>
+    </div>
+
+    <div class="input">
+      <label for="title">Title:</label>
+      <input type="text" name="title" id="title" required>
+    </div>
+
+    <div class="input">
+      <label for="author">Author:</label>
+      <input type="text" name="name" id="author" required>
+    </div>
+
+    <div class="input">
+      <label for="pages">Pages:</label>
+      <input type="number" name="pages" id="pages" required>
+    </div>
+
+    <div class="input">
+      <label>Status:</label>
+      <label for="check" class="checkbox">
+        <p>Read</p>
+        <input type="checkbox" name="read" id="check">
+      </label>
+    </div>
+
+    <div class="input">
+      <button class="btn" id="submit">Submit</button>
+    </div>
+  </div>
+</div>
   <script src="main.js"></script>
 </body>
 </html>

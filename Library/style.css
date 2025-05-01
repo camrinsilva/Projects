@@ -2,15 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: #1293D5ff;
   color: #ffffff;
   height: 100px;
+  padding: 20px;
+}
+
+header .btn {
+  height: 50px;
+  width: 150px;
+  border-radius: 20px;
+  font-size: 1.2rem;
 }
 
 main {
@@ -21,16 +30,26 @@ main {
   justify-content: center;
   background-color: #e3e9f0;
   gap: 10px;
+  position: relative;
 }
 
 .card {
   background-color: #ffffff;
-  display: flex;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
   width: 250px;
   height: 250px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px;
+}
+
+.card label + label {
+  margin-top: 5px;
+}
+
+.card .btn {
+  width: 100%;
 }
 
 .btn {
@@ -39,4 +58,111 @@ main {
   border-radius: 10px;
   background-color: #ffffff;
   color: #1293D5ff;
+  border: none;
+  box-shadow: 2px 2px 2px ;
+  cursor: pointer;
+}
+
+.card .btn {
+  margin-top: 10px;
+}
+
+.card .btn:hover {
+  background-color: #1293D5ff;
+  color: #ffffff;
+  scale: .980;
+}
+
+.btn:hover {
+  scale: .990;
+}
+
+.my-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;  
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ }
+
+ .hidden {
+  display: none;
+ }
+
+.modal {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  background-color: #1293D5ff;
+  color: #ffffff;
+  border-radius: 10px;
+  height: 400px;
+  width: 320px;
+  padding: 20px;
+}
+
+.modal .input {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.input .close {
+  align-content: center;
+}
+
+.input label {
+  margin-right: 10px;
+}
+
+.input .checkbox {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.input #check {
+  max-width: 50px;
+}
+
+.input p {
+  font-weight: 400;
+}
+
+.input input {
+  width: 100%;
+  max-width: 300px;
+  height: 25px;
+  padding: 5px;
+
+}
+
+.input + .input {
+  margin-top: 15px;
+}
+
+.modal-bg {
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal .btn {
+  width: 100%;
+}
+
+.x-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  width: 20px;
+  height: 20px;
+}
+
+.x-btn:hover {
+  scale: .990;
+  cursor: pointer;
 }
